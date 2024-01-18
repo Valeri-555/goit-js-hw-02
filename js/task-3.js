@@ -1,11 +1,11 @@
 function checkForSpam(message) {
-    const hasSpam = message.includes("spam");
-    const hasSale = message.includes("sale")
+    
+    const messRegistr = message.toLowerCase();
 
-    if (hasSpam || hasSale) {
-        return message; 
+    if (messRegistr.includes("spam") || messRegistr.includes("sale")) {
+        return true; 
     } else {
-        return message;
+        return false;
     }
 };
 
